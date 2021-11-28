@@ -53,28 +53,36 @@
 
     <!-- body -->
     <main>
-      <div class="row">
-        <div class="col mainContent">
-          <div class="row logo">
-            <p><G>G</G><O>o</O><O2>o</O2><G2>g</G2><L>l</L><E>e</E></p>
+      <div class="col mainContent">
+        <div class="row logo">
+          <picture>
+            <img
+              src="https://www.google.com.co/logos/doodles/2021/seasonal-holidays-2021-6753651837109324-law.gif"
+              alt=""
+              srcset=""
+            />
+          </picture>
+          <!-- <p><G>G</G><O>o</O><O2>o</O2><G2>g</G2><L>l</L><E>e</E></p> -->
+        </div>
+        <div class="col sbContainer">
+          <div class="sb row">
+            <div class="searchBar">
+              <input type="text" name="" id="" />
+            </div>
           </div>
-          <div class="row searchBar">
-            <!-- <span class="material-icons"> search </span> -->
-            <input type="text" name="" id="" />
-          </div>
-          <div class="row buttons">
+          <div class="buttons row">
             <button class="myBtn searchB">Buscar con Google</button>
             <button class="myBtn luckB">Me siento con suerte</button>
           </div>
-          <div class="row">
-            <p>
-              Ofrecido por Google
-              <a
-                href="https://www.google.com/setprefs?sig=0_hD1VHyxkPPsewRLOwPLpFj6EBG0%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwjhu9iFj6v0AhUhq5UCHYowA0QQ2ZgBCA4"
-                >Español (Latinoamérica)</a
-              >
-            </p>
-          </div>
+        </div>
+        <div class="row">
+          <p>
+            Ofrecido por Google
+            <a
+              href="https://www.google.com/setprefs?sig=0_hD1VHyxkPPsewRLOwPLpFj6EBG0%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwjhu9iFj6v0AhUhq5UCHYowA0QQ2ZgBCA4"
+              >Español (Latinoamérica)</a
+            >
+          </p>
         </div>
       </div>
     </main>
@@ -83,13 +91,14 @@
     <footer>
       <div class="row footerPais">Colombia</div>
       <div class="row footerMenu">
-        <div class="col menuFLeft">
+        <div class="col-md-7 menuFLeft">
           <a href="#">Sobre Google</a>
           <a href="#">Publicidad</a>
           <a href="#">Negocios</a>
-          <a href="#">Cómo funciona la Búsqueda</a>
+          <a class="specialL" href="#">Cómo funciona la Búsqueda</a>
         </div>
-        <div class="col menuFDerecha">
+
+        <div class="col-md-5 menuFDerecha">
           <a href="#">Privacidad</a>
           <a href="#">Condiciones</a>
           <a href="#">Preferencias</a>
@@ -98,3 +107,11 @@
     </footer>
   </body>
 </html>
+
+<!-- 1 poner hovers (barra arriba, sb)OK  
+2 menos padding OK
+3 reducir el ancho a la sb OK
+4 bajar logo(no hay espacio entre el main y header) OK
+5 centrado de la barra de abajo OK
+https://www.google.com.co/logos/doodles/2021/seasonal-holidays-2021-6753651837109324-law.gif
+-->

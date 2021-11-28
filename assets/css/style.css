@@ -10,6 +10,11 @@ div.container-fluid {
   padding-right: 0px;
 }
 
+a:hover,
+a:focus {
+  text-decoration: underline !important;
+}
+
 /* Nevbar Header */
 nav ul {
   font-family: sans-serif;
@@ -51,6 +56,7 @@ main {
 
 .mainContent {
   text-align: center;
+  width: 100%;
 }
 
 .apps {
@@ -59,8 +65,15 @@ main {
 
 /* Logo */
 
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .logo {
-  width: 584px;
+  width: 100%;
+  height: 290px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,6 +110,7 @@ E {
   color: #ea4335;
 }
 /* Search Bar */
+
 .searchBar {
   margin-left: auto;
   margin-right: auto;
@@ -111,7 +125,7 @@ E {
   align-items: center;
   width: 584px;
   padding-left: 40px;
-  height: 50px;
+  height: 44px;
   border: 1px solid #f2f2f2;
   border-radius: 25px;
 }
@@ -125,12 +139,17 @@ E {
   box-shadow: grey;
 }
 
+.searchBar:hover,
+.searchBar:active {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
 /* Buttons */
 .buttons {
   margin-top: 3%;
-  width: 500px;
-  margin-left: 20%;
-  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .myBtn {
@@ -142,6 +161,7 @@ E {
   font-family: arial, sans-serif;
   font-size: 13px;
   margin: 11px 4px;
+  margin-top: 11px;
   padding: 0 16px;
   line-height: 27px;
   height: 36px;
@@ -168,32 +188,107 @@ footer {
   background-color: #f2f2f2;
   border-bottom: solid 1px #dadce0;
   padding: 15px 30px;
-  padding-left: 45px;
+  height: 48px;
+  padding-left: 55px;
 }
 
 .footerMenu {
-  padding: 0 20px;
+  font-size: 14px;
+  padding: 15px 30px;
+  height: 46px;
 }
 
 .menuFLeft {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
+}
+
+/* .specialL {
+  padding-top: 0px;
+} */
+
+.menuFMid {
+  display: flex;
+  justify-content: start;
+}
+
+.menuFDerecha {
+  display: flex;
+  justify-content: end;
 }
 
 .menuFLeft a {
   outline: none;
   text-decoration: none;
   color: #70757a;
-  padding: 15px;
+  padding: 0 15px;
 }
-.menuFDerecha {
-  display: flex;
-  justify-content: end;
+
+.menuFMid a {
+  outline: none;
+  text-decoration: none;
+  color: #70757a;
 }
 
 .menuFDerecha a {
   outline: none;
   text-decoration: none;
   color: #70757a;
-  padding: 15px;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 856px) {
+  /* For mobile phones: */
+  .menuFDerecha {
+    justify-content: space-evenly;
+  }
+
+  .menuFLeft {
+    justify-content: space-evenly;
+  }
+
+  .footerMenu {
+    height: 92px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 573px) {
+  /* For mobile phones: */
+
+  .menuFLeft {
+    justify-content: space-evenly;
+    padding: 15px;
+    white-space: nowrap;
+  }
+
+  .specialL {
+    margin-top: 15px;
+  }
+
+  .menuFDerecha {
+    justify-content: space-evenly;
+  }
+
+  .footerMenu {
+    height: 138px;
+  }
+
+  .searchBar {
+    width: 460px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 855px) {
+  .menuFLeft {
+    flex-wrap: nowrap;
+  }
 }
